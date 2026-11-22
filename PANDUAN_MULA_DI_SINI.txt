@@ -1,0 +1,19 @@
+MISI SUSUN PERENGGAN SARA - RANKING AUTOMATIK
+
+1. Ekstrak fail ZIP.
+2. Buka repositori GitHub misi-susun-perenggan-sara (PRIVATE).
+3. Add file > Upload files. Seret KANDUNGAN folder ini ke GitHub, bukan ZIP. Pastikan package.json dan netlify.toml ada di akar repositori, public/index.html, netlify/functions/scores.mjs.
+4. Commit changes.
+5. Netlify > Add new project > Import from Git > GitHub. Pilih repositori misi-susun-perenggan-sara.
+6. Configure manually: Base kosong, Build command npm run build, Publish directory public, Functions directory netlify/functions. Jika Netlify membaca netlify.toml, biarkan tetapan di dalam fail digunakan.
+7. Deploy. Pastikan status Published dan laman Public jika untuk Google Sites.
+8. Uji dengan nama samaran, lengkapkan enam kad, lihat mesej 'Markah disimpan' dan papan ranking. Cuba pada peranti kedua.
+9. Google Sites > Insert > Embed > By URL, tampal URL Netlify baharu.
+
+NOTA:
+- Nama samaran sahaja. Jangan masukkan nama penuh murid.
+- Ranking terbuka kepada sesiapa yang boleh membuka laman; sistem tidak mengesahkan identiti murid atau skor secara kriptografi. Ini sesuai untuk aktiviti motivasi, bukan rekod peperiksaan rasmi.
+- Semua pemain yang tamat permainan akan menerima 6/6. Bilangan kesilapan menjadi pemisah ranking.
+- Jika nama samaran sama digunakan oleh dua murid, rekod akan berkongsi satu tempat.
+- Penyimpanan menggunakan Netlify Blobs dan tertakluk pada had/peruntukan akaun Netlify.
+- Fail ini perlu diterbitkan melalui Git-connected deploy untuk pemasangan dependencies dan functions, bukan upload HTML tunggal.
